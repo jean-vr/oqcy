@@ -1,0 +1,9 @@
+expo.modules.oqcyclassic.oqcy-classic-pngs-0 /home/jean/Downloads/oqcy/modules/oqcy-classic/android/build/generated/res/pngs/debug
+expo.modules.oqcyclassic.oqcy-classic-updated_navigation_xml-1 /home/jean/Downloads/oqcy/modules/oqcy-classic/android/build/generated/updated_navigation_xml/debug
+expo.modules.oqcyclassic.oqcy-classic-mergeDebugResources-2 /home/jean/Downloads/oqcy/modules/oqcy-classic/android/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+expo.modules.oqcyclassic.oqcy-classic-mergeDebugResources-3 /home/jean/Downloads/oqcy/modules/oqcy-classic/android/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+expo.modules.oqcyclassic.oqcy-classic-debug-4 /home/jean/Downloads/oqcy/modules/oqcy-classic/android/build/intermediates/merged_res/debug/mergeDebugResources
+expo.modules.oqcyclassic.oqcy-classic-debug-5 /home/jean/Downloads/oqcy/modules/oqcy-classic/android/build/intermediates/packaged_res/debug/packageDebugResources
+expo.modules.oqcyclassic.oqcy-classic-debug-6 /home/jean/Downloads/oqcy/modules/oqcy-classic/android/src/debug/res
+expo.modules.oqcyclassic.oqcy-classic-main-7 /home/jean/Downloads/oqcy/modules/oqcy-classic/android/src/main/res
+gradleHome-0 /home/jean/.gradle

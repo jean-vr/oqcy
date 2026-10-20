@@ -1,18 +1,22 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
+import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 import { useColorScheme } from 'react-native';
+import { useRuntime } from '@/runtime';
 
-import { AnimatedSplashOverlay } from '@/components/animated-icon';
-import AppTabs from '@/components/app-tabs';
-
-SplashScreen.preventAutoHideAsync();
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
+export default function RootLayout() {
+  useRuntime();
+  const dark = useColorScheme() === 'dark';
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <AnimatedSplashOverlay />
-      <AppTabs />
+    <ThemeProvider value={dark ? DarkTheme : DefaultTheme}>
+      <StatusBar style="auto" />
+      <Stack screenOptions={{ headerShadowVisible: false }}>
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen name="pair" options={{ title: 'Adicionar fone' }} />
+        <Stack.Screen name="eq" options={{ title: 'Equalizador' }} />
+        <Stack.Screen name="buttons" options={{ title: 'Botões' }} />
+        <Stack.Screen name="settings" options={{ title: 'Ajustes' }} />
+        <Stack.Screen name="log" options={{ title: 'Diagnóstico' }} />
+      </Stack>
     </ThemeProvider>
   );
 }
