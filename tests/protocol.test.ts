@@ -116,6 +116,7 @@ describe('presets de EQ (capturados do app oficial no HT05)', () => {
     'Bass pesados': '0306050403000000000000',
     Popular: '02fa05fdfe0504fcfd0604',
     Predefinido: '0100000000000000000000',
+    Clássico: '0605050102ff01fcfaf9f8', // sem captura HCI: índice inferido
   };
   it('geram exatamente os bytes da captura', () => {
     for (const p of EQ_PRESETS) expect(toHex(presetBytes(p))).toBe(captured[p.name]);

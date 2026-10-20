@@ -1,7 +1,7 @@
 /**
  * Valores do comando 12 (modo de ruído) do QCY HT05 ANC. Origem: duas capturas HCI do app oficial
- * + confirmação do usuário (02/63/A4). Os cenários do ANC (41..71) seguem a ordem da tela do app
- * oficial (Interior → Viagens diárias → Barulho → Ruído contra o vento); a ordem é inferida.
+ * + confirmação do usuário (02/63/A4). Faixas dos cenários do ANC, observadas no app oficial:
+ * Interior 65–67, Viagens diárias 81–83, Barulho 97–99, Vento 113; Transparente 160–166 (padrão 164).
  */
 export const NOISE_MODES = [
   { value: 0x63, label: 'Cancelamento' },
